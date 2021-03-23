@@ -1,17 +1,19 @@
 /************** PART 1 **************/
 
 // STEP 1: Write a variable that will store the total points possible (2500 points) that you can get in this course.
-
+const totalPoints = 2500;
 
 // STEP 2: Use a prompt to collect the number of points a student currently has in the course and store that number in a variable.
-
+let currentPoints = Number(prompt('How many points do you currently have?'));
 
 // STEP 3: Write an arrow function that accepts two arguments. The function should calculate and return the student's CURRENT grade percentage.
+let studentGradePercentage = (currentPoints, totalPoints) => Math.round((currentPoints / totalPoints) * 100);
+
 
 
 // STEP 4: Write on the page a sentence that will say, "Your current grade is [CURRENT GRADE PERCENTAGE]%."
-
-
+// document.getElementById("grade percentage").innerHTML = `Your current grade is ${studentGradePercentage}%`; 
+document.write(`Your current grade is ${studentGradePercentage(currentPoints, totalPoints)}%`);
 
 /************** PART 2 **************/
 
